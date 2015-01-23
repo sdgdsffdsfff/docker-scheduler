@@ -1,0 +1,41 @@
+nats:
+  host: "211.151.13.13"
+  port: 4222
+  user: nats
+  pass: 1qaz2wsx
+
+logging:
+  file: /export/home/jae/scheduler.log
+  level: info
+  
+port: 9081
+dea_timeout_second: 10
+
+droplet:
+  cache_base_dir: /export/home/droplets
+  cache_directory: cc-droplets
+  cache_time_out_second:  864000
+  cache_interval_second:  3600
+  disk_max_used_space_percent: 70
+  
+package:
+  cache_base_dir: /export/home/droplets
+  cache_directory: cc-packages
+  cache_time_out_second:  864000
+  cache_interval_second:  3600
+  disk_max_used_space_percent: 70
+
+buildpackcache:
+  cache_base_dir: /export/home/droplets
+  cache_directory: cc-buildpack
+  cache_time_out_second:  432000
+  disk_max_used_space_percent: 40
+  
+jss:
+  access_key: 3e05c77d08a14045a0bd2ea307eb1ae9
+  secret_Key: 6212b165e5b54c3cb43d20295bf03e7aPIymHVqg
+  droplet_bucket: jae-droplets
+  app_package_bucket: jae-apppackage
+  host: storage.jcloud.com
+  domain: http://storage.jcloud.com
+  timeout_second: 60
